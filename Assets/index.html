@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<title>Weather App Five Day Forecast</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="C:\Users\18608\Documents\GitHub\weatherapp\Assets\style.css">
+    <script src="https://kit.fontawesome.com/5892237bfb.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+<body>
+            <a class="header" class="navbar-brand" href="#"> Weather Dashboard</a>
+        </nav>
+        <div class="container text-center"></div>
+    </div>
+
+
+<div class="jumbotron">
+    <h1 id = "nameOfCity" class="title">Click City Button or Enter City in Search Box to See Current Weather</h>
+     <h3 id="todayTemp"></h3>
+    <h3 id="todayHumidity"></h3>
+    <h3 id="todayWindSpeed"></h3>
+    <h3 id="todayUVIndex"></h3>
+    <img id="todayIconDiv" src="">
+  </div>
+
+  <h2 class="fiveDayForecast">5-Day Forecast for 5pm Daily</h2>
+    <container>
+       <div class="row">
+       <div id="day0" class="card text-white">
+           <h5 class="card-header" id="0date"></h5>
+           <div class="card-body">
+             <p class="card-title" id="0fiveDayTemp"></p>
+             <p class="card-text" id="0fiveDayHumidity"></p>
+             <img id="0fiveDayIcon" src="">
+            </div>
+         </div>
+   
+         <div id="day1" class="card text-white">
+           <h5 class="card-header" id="1date"></h5>
+           <div class="card-body">
+             <p class="card-title" id="1fiveDayTemp"></p>
+             <p class="card-text" id="1fiveDayHumidity"></p>
+             <img id="1fiveDayIcon" src="">
+           </div>
+         </div>
+   
+         <div id="day2" class="card text-white">
+          <h5 class="card-header" id="2date"></h5>
+          <div class="card-body">
+            <p class="card-title" id="2fiveDayTemp"></p>
+            <p class="card-text" id="2fiveDayHumidity"></p>
+            <img id="2fiveDayIcon" src="">
+          </div>
+        </div>
+   
+        <div id="day3" class="card text-white">
+          <h5 class="card-header" id="3date"></h5>
+          <div class="card-body">
+            <p class="card-title" id="3fiveDayTemp"></p>
+            <p class="card-text" id="3fiveDayHumidity"></p>
+            <img id="3fiveDayIcon" src="">
+          </div>
+        </div>
+   
+        <div id="day4" class="card text-white">
+          <h5 class="card-header" id="4date"></h5>
+          <div class="card-body">
+            <p class="card-title" id="4fiveDayTemp"></p>
+            <p class="card-text" id="4fiveDayHumidity"></p>
+            <img id="4fiveDayIcon" src="">
+          </div>
+        </div>
+         </container>
+
+     
+        <div id="searchBox">
+          <form id="weather-form">
+              </strong><label for="cityInput" id="cityInput"><strong>Search by City:</strong></label>
+              <br>
+              <input type="text" id="cityData" placeholder="City">
+  
+              
+              <input id="searchBtn" class="btn btn-secondary mb-2" type="submit" value="Search" style="background-color:slateblue">
+              <h5 class="justify-content-center pt-2 pl-3">Your Previously Searched Cities: </h5>
+              <div id="searchedLocations"></div>
+              
+                
+            </div>
+
+
+
+        </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="C:\Users\18608\Documents\GitHub\weatherapp\Assets\weather.js"></script>
+
+</body>
