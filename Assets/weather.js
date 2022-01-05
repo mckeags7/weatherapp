@@ -4,6 +4,7 @@ var lon = "longitude";
 var uvIndex = (lat + lon);
 var apiKey = "19113027cee7d9c234b7c839da7576c2";
 var locations = [];
+var city = $(this).prev().val().trim()
 
 init(); 
 listClicker(); 
