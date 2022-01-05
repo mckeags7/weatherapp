@@ -54,12 +54,10 @@ $(".listbtn").on("click", function(event){
 function searchClicker() {
 $("#searchBtn").on("click", function(event){
     event.preventDefault();
-    var city = $(this).prev().val().trim()
     
 
-    locations.push(city);
-
-    if (city == ""){
+    locations.push(cityName);
+    if (cityName == ""){
         return; 
     }
 
@@ -72,10 +70,10 @@ $("#searchBtn").on("click", function(event){
 
 function APIcalls(){
     
-    forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=imperial`;
-    currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}&units=imperial`;
+    forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${apiKey}&units=imperial`;
+    currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&APPID=${apiKey}&units=imperial`;
     
-    $("#nameOfCity").text("Today's Weather in " + city);
+    $("#nameOfCity").text("Today's Weather in " + cityName);
     $.ajax({
         url: forecastUrl,
         method: "GET",
@@ -129,7 +127,7 @@ function APIcalls(){
          url:currentWeatherUrl,
          method: "GET", 
      }).then(function(currentData){
-         $("#nameOfCity").text("Today's Weather in " + city + ":");
+         $("#nameOfCity").text("Today's Weather in " + cityName + ":");
          $("#todayTemp").text("Temperature: " + Math.round(currentData.main.temp) + String.fromCharCode(176)+"F");
          $("#todayHumidity").text("Humidity: " + currentData.main.humidity + "%");
          $("#todayWindSpeed").text("Wind Speed: " + currentData.wind.speed + " mph");
